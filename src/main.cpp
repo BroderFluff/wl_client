@@ -10,7 +10,7 @@ extern "C" {
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <wayland-client.h>
-#include "wl/xdg-shell-client-protocol.h"
+#include "xdg-shell-client-protocol.h"
 }
 
 static void randname(char *buf) noexcept {
@@ -59,14 +59,14 @@ static int allocate_shm_file(size_t size) noexcept {
 }
 
 struct client_state {
-	wl_display *	wl_display {};
-	wl_registry *	wl_registry {};
-	wl_shm *		wl_shm {};
-	wl_compositor *	wl_compositor {};
-	xdg_wm_base *	xdg_wm_base {};
-	wl_surface *	wl_surface {};
-	xdg_surface *	xdg_surface {};
-	xdg_toplevel *	xdg_toplevel {};
+	struct wl_display *	wl_display {};
+	struct wl_registry *	wl_registry {};
+	struct wl_shm *		wl_shm {};
+	struct wl_compositor *	wl_compositor {};
+	struct xdg_wm_base *	xdg_wm_base {};
+	struct wl_surface *	wl_surface {};
+	struct xdg_surface *	xdg_surface {};
+	struct xdg_toplevel *	xdg_toplevel {};
 };
 
 static void wl_buffer_release(void *data, wl_buffer *buffer) noexcept {

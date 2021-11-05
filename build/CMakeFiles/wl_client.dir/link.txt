@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/wl_client.dir/src/main.cpp.o ../wl/xdg-shell-protocol.o -o wl_client   -L/home/jool/dev/git/wl_client/wl  -Wl,-rpath,/home/jool/dev/git/wl_client/wl -lwayland-client 

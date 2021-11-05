@@ -1,0 +1,3 @@
+/home/jool/dev/git/wl_client/build/CMakeFiles/rebuild_cache.dir
+/home/jool/dev/git/wl_client/build/CMakeFiles/edit_cache.dir
+/home/jool/dev/git/wl_client/build/CMakeFiles/wl_client.dir

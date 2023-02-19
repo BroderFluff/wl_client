@@ -162,7 +162,7 @@ static void registry_handle_global(void *data, struct wl_registry *registry, uin
 
 	/* printf("interface: '%s', version: %d, name %d\n", interface, version, name); */
 }
-wl_c
+
 static void registry_handle_global_remove(void *data, struct wl_registry *registry, uint32_t name) {
 }
 
